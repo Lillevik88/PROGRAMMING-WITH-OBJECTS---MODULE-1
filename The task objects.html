@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="modify()">Modify property</button>
+    <button onclick="obj.sum()">Sum</button>
+    <button onclick="obj.multiplication()">Multiplication</button>
+
+    <script>
+     
+
+    
+    const obj = {
+        value1: 1,
+        value2: 2,
+        sum: function() {
+            console.log(this.value1 + this.value2)
+        },
+        multiplication: function() {
+            console.log(this.value1 * this.value2)
+        } 
+    }
+   function modify() {
+    const name = prompt("Provide the name of the property you want ot modify")
+    if (obj[name] != null) {
+        const newValue = parseInt(prompt("please give me new value"))
+        if(!isNaN(newValue)) {
+            obj[name] = newValue
+        }
+    }
+   }
+
+</script>
+
+    
+</body>
+</html>

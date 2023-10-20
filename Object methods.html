@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="obj.increment()">Legg til</button>
+    <button onclick="obj.decrement()">Fjern</button>
+
+    <script>
+        const obj = {
+            value: 0,
+            increment: function() {
+                this.value++
+                console.log(this.value)
+            },
+            decrement: function() {
+                this.value--
+                console.log(this.value)
+            }
+        }
+    </script>
+    
+
+</body>
+</html>

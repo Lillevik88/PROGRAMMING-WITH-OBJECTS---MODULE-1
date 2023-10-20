@@ -1,3 +1,23 @@
+
+class = MyClass
+constructor(
+    name,
+    numberName,
+    smallObject {
+        smallName1,
+        smallName2
+    }
+) {
+    this.name = name;
+    this.numberName = numberName
+    this.smallObject = smallObject {
+        smallName1
+        smallName2
+    }
+}
+
+
+
 const myObject = {
     name: "value",
     numberName: 20,
