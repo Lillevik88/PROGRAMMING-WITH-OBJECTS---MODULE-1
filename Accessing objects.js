@@ -1,5 +1,5 @@
 
-class = MyClass
+/* class = MyClass
 constructor(
     name,
     numberName,
@@ -14,7 +14,7 @@ constructor(
         smallName1
         smallName2
     }
-}
+} */
 
 
 
